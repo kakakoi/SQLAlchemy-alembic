@@ -14,6 +14,7 @@ alembic init alembic_sample
 
 user.pyを編集して下記を実行
 ```bash
+docker-compose up -d
 alembic revision --autogenerate -m "create tables"
 alembic upgrade head
 ```
